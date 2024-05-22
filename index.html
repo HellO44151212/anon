@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./static/libs/scrollReveal/scrollreveal.min.js"></script>
+    <!-- 引入font-awesome依赖 -->
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>CLIE</title>
+  </head>
+  <body>
+    <!-- 网页头部 -->
+    <header>
+      <div class="logo">CLIE</div>
+      <nav>
+        <a href="#Homepage">Homepage</a>
+        <a href="#Abstract">Abstract</a>
+        <a href="#Our Method">Our Method</a>
+        <a href="#Result">Result</a>
+        <a href="#Video Demo">Video Demo</a>
+        <a href="#Cite Our Work">Cite Our Work</a>
+      </nav>
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <div id="Homepage" class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <!-- 轮播图一 -->
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>CLIE: Toward Tiny, Fast and Controllable Low-Light Image Enhancemen</h1>
+              <h3>JiangWei Weng, Jun Li and Jian Yang</h3>
+              <h3>PCALab@NJUST</h3>
+              <button class="explore-btn">CVPR 2024</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./static/images/people-in-couch-1024248.jpg" />
+          </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1> </h1>
+              <h3> </h3>
+              <!-- <button class="explore-btn">CVPR</button> -->
+            </div>
+            <div class="backdrop"></div>
+            <video
+              src="./static/videos/5.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
+          </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fa fa-angle-right"></i>
+          </button>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <section id="Abstract" class="Abstract">
+        <h2 class="title1">Abstract</h2>
+        <div class="intro">
+          <p>
+            Existing low-light image enhancement methods independently infer the respective desirable results from a single image, which may encounter insufficient illumination or color distortion. 
+            In this paper, we proposed a new lightweight yet effective learning framework for fast and controllable low light image enhancement (CLIE). 
+            In particular, We explore a tiny Retinex-based network to brighten images, which only requires the several simple $1 \times 1$ convolutional kernels and a few dozen parameters.  
+            Additionally, we design a light-controlled network to readjust the illumination of the enhanced result, in which arbitrary pictures can be feed into a novel channel-wise attention module to change the illumination. 
+            Meanwhile, a self-supervised manner is proposed to drive the learning of our method by collecting the enhanced results from different state-of-the-art methods to reflect the unified physical properties and represent specific illumination, instead of manually gaining the paired or unpaired datasets. 
+            Despite its simplicity, extensive experiments on various benchmarks and low-light images captured in real scene demonstrate that our method over excellent performance in terms of quality and efficiency.
+          </p>
+        </div>
+          
+      </section>
+    
+      <section id="Our Method" class="showcases section-bg">
+        <h2 class="title1">Our Method</h2>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="*">CLIE</button>
+          <button class="filter-btn" data-filter=".TRN">TRN</button>
+          <button class="filter-btn" data-filter=".LCN">LCN</button>
+          <button class="filter-btn" data-filter=".CAM">CAM</button>
+        </div>
+        <div class="cases">
+          <div class="case-item TRN">
+            <img src="./static/images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item LCN">
+            <img src="./static/images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+          </div>
+          <div class="case-item CAM">
+            <img src="./static/images/apple-laptop-notebook-office-39284.jpg" alt="">
+          </div>
+          <div class="case-item all">
+            <img src="./static/images/apple-apple-device-design-desk-285814.jpg" alt="">
+        </div>
+      </section>
+
+      <section id="Result" class="team-intro section-bg">
+        <h2 class="title1">Result</h2>
+        <div class="intro">
+          <p>
+            Existing low-light image enhancement methods independently infer the respective desirable results from a single image, which may encounter insufficient illumination or color distortion. 
+            In this paper, we proposed a new lightweight yet effective learning framework for fast and controllable low light image enhancement (CLIE). 
+            In particular, We explore a tiny Retinex-based network to brighten images, which only requires the several simple $1 \times 1$ convolutional kernels and a few dozen parameters.  
+            Additionally, we design a light-controlled network to readjust the illumination of the enhanced result, in which arbitrary pictures can be feed into a novel channel-wise attention module to change the illumination. 
+            Meanwhile, a self-supervised manner is proposed to drive the learning of our method by collecting the enhanced results from different state-of-the-art methods to reflect the unified physical properties and represent specific illumination, instead of manually gaining the paired or unpaired datasets. 
+            Despite its simplicity, extensive experiments on various benchmarks and low-light images captured in real scene demonstrate that our method over excellent performance in terms of quality and efficiency.
+          </p>
+        </div>
+      </section>
+
+      <section id="Video Demo" class="company-activities">
+        <h2 class="title1">Video Demo</h2>
+        <div class="intro">
+          <p>
+            Existing low-light image enhancement methods independently infer the respective desirable results from a single image, which may encounter insufficient illumination or color distortion. 
+            In this paper, we proposed a new lightweight yet effective learning framework for fast and controllable low light image enhancement (CLIE). 
+            In particular, We explore a tiny Retinex-based network to brighten images, which only requires the several simple $1 \times 1$ convolutional kernels and a few dozen parameters.  
+            Additionally, we design a light-controlled network to readjust the illumination of the enhanced result, in which arbitrary pictures can be feed into a novel channel-wise attention module to change the illumination. 
+            Meanwhile, a self-supervised manner is proposed to drive the learning of our method by collecting the enhanced results from different state-of-the-art methods to reflect the unified physical properties and represent specific illumination, instead of manually gaining the paired or unpaired datasets. 
+            Despite its simplicity, extensive experiments on various benchmarks and low-light images captured in real scene demonstrate that our method over excellent performance in terms of quality and efficiency.
+          </p>
+        </div>
+      </section>
+
+      <section id="Cite Our Work" class="company-activities">
+        <h2 class="title1">Cite Our Work</h2>
+
+      </section>
+    </div>
+    <footer>
+        <ul class="social-links">
+          <li><a href="http://www.baidu"><i class="fas fa-print"></i></a></li>
+          <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+          <li><a href="http://www.baidu"><i class="fab fa-google"></i></a></li>
+        </ul>
+        <p class="icp-info">Developed by WJW</p>
+        <p class="rights">&copy; All right reserved</p>
+        <div class="scroll-to-top">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- 引入JS文件 --> 
+    <script src="./static/libs/anime/anime.min.js"></script>
+    <script src="./static/libs/glide/glide.min.js"></script>
+    <script src="./static/libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="./static/libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
