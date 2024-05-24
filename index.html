@@ -9,6 +9,8 @@
       href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"
       rel="stylesheet"
     />
+    <script src="imgSlider.min.js"></script>
+    <link rel="stylesheet" href="imgSlider.css">
     <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css" />
     <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -155,6 +157,22 @@ the second best one is in blue </p>
           <!-- 添加其他视频格式的源 -->
           Your browser does not support the video tag.
         </video>
+        
+          <!-- imgsli.com 嵌入代码开始 -->
+        <iframe src="https://imgsli.com/MTk5ODI1" frameborder="0" scrolling="no" width="100%" height="600px"></iframe>
+        <!-- imgsli.com 嵌入代码结束 -->
+
+        <script>
+          var slider = new ImgSlider({
+            container: 'slider',
+            images: ["./static/images/fig_1.png", './static/images/fig_1.png'],
+            vertical: true,
+            onChange: function(value) {
+              console.log('Slider value:', value);
+            }
+          });
+        </script>
+
       </section>
 
       <section id="Cite Our Work" class="company-activities">
