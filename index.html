@@ -9,11 +9,31 @@
       href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"
       rel="stylesheet"
     />
-    <script src="imgSlider.min.js"></script>
-    <link rel="stylesheet" href="imgSlider.css">
     <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css" />
     <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css" />
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .iframe-row {
+          display: flex;
+          gap: 10px; /* iframe 之间的间距 */
+      }
+      .iframe-container {
+          width: 400px;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+          border: 1px solid #ccc; /* 可选的边框以更好地看到容器 */
+      }
+      .iframe-container iframe {
+          position: absolute;
+          top: -80px; /* 调整这个值来选择显示的部分 */
+          left: -200px; /* 调整这个值来选择显示的部分 */
+          width: 800px; /* 必须大于容器宽度 */
+          height: 700px; /* 必须大于容器高度 */
+          border: none;
+      }
+  </style>
 
     <title>MambaLLIE</title>
   </head>
@@ -22,11 +42,11 @@
     <header>
       <div class="logo">MambaLLIE</div>
       <nav>
-        <a href="#Homepage">Homepage</a>
+        <a href="#Homepage">Pipeline</a>
+        <a href="#Demo">Demo</a>
         <a href="#Abstract">Abstract</a>
         <a href="#Our Method">Our Method</a>
         <a href="#Result">Result</a>
-        <a href="#Demo">Video Demo</a>
         <a href="#Cite Our Work">Cite Our Work</a>
       </nav>
       <div class="burger">
@@ -47,18 +67,17 @@
               <!-- <h3>PCALab@NJUST</h3> -->
             </div>
             <div class="backdrop"></div>
-            <img src="./static/images/fig_1.png" />
+            <img src="./static/images/pipeline.png" />
           </div>
 
           <!-- 轮播图二 -->
-          <div class="glide__slide">
+          <!-- <div class="glide__slide">
             <div class="slide-caption right">
               <h1> </h1>
               <h3> </h3>
-              <!-- <button class="explore-btn">CVPR</button> -->
             </div>
             <div class="backdrop"></div>
-            <img src="./static/images/fig_2.png" />
+            <img src="./static/images/fig_2.png" /> -->
             
           <!-- <div class="glide__slide">
             <div class="slide-caption left">
@@ -88,6 +107,64 @@
         </div>
       </div>
     </div>
+
+    <section id="Video Demo" class="company-activities">
+      <h2 class="title1">Video Demo</h2>
+      <!-- 添加视频播放器 -->
+      <video controls>
+        <source src="./static/videos/videoi1.mp4" type="video/mp4">
+        <!-- 添加其他视频格式的源 -->
+        Your browser does not support the video tag.
+      </video>
+
+      <body>
+        <p>
+          LoLv2 datasets. 
+        </p>
+        <div class="iframe-row">
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzc5"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzgw"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzgx"></iframe>
+            </div>
+        </div>
+        <p>
+          SMID and SDSD datasets. 
+        </p>
+      <div class="iframe-row">
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzg3"></iframe>
+          </div>
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzg1"></iframe>
+          </div>
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzg2"></iframe>
+          </div>
+      </div>
+
+      <p>
+        ExDark dataset. 
+      </p>
+      <div class="iframe-row">
+
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzky"></iframe>
+          </div>
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzkw"></iframe>
+          </div>
+          <div class="iframe-container">
+              <iframe src="https://imgsli.com/MjY2Nzk1"></iframe>
+          </div>
+      </div>
+    </body>
+
+    </section>
 
     <div class="content-wrapper">
       <section id="Abstract" class="Abstract">
@@ -147,32 +224,13 @@ the second best one is in blue </p>
           </p>
             <img src="./static/images/res2.png" alt="showcase" />
         </div>
-      </section>
 
-      <section id="Video Demo" class="company-activities">
-        <h2 class="title1">Video Demo</h2>
-        <!-- 添加视频播放器 -->
-        <video controls>
-          <source src="./static/videos/videoi1.mp4" type="video/mp4">
-          <!-- 添加其他视频格式的源 -->
-          Your browser does not support the video tag.
-        </video>
-        
-          <!-- imgsli.com 嵌入代码开始 -->
-        <iframe src="https://imgsli.com/MTk5ODI1" frameborder="0" scrolling="no" width="100%" height="600px"></iframe>
-        <!-- imgsli.com 嵌入代码结束 -->
-
-        <script>
-          var slider = new ImgSlider({
-            container: 'slider',
-            images: ["./static/images/fig_1.png", './static/images/fig_1.png'],
-            vertical: true,
-            onChange: function(value) {
-              console.log('Slider value:', value);
-            }
-          });
-        </script>
-
+        <div class="intro">
+          <p>
+            Qualitative comparison with previous SOTA method on ExDark dataset.
+          </p>
+            <img src="./static/images/Object.png" alt="showcase" />
+        </div>
       </section>
 
       <section id="Cite Our Work" class="company-activities">
