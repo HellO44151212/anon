@@ -45,7 +45,7 @@
         <a href="#Homepage">Pipeline</a>
         <a href="#Demo">Demo</a>
         <a href="#Abstract">Abstract</a>
-        <a href="#Our Method">Our Method</a>
+        <a href="#Our Method">Methodology</a>
         <a href="#Result">Result</a>
         <a href="#Cite Our Work">Cite Our Work</a>
       </nav>
@@ -63,7 +63,7 @@
             <div class="slide-caption left">
               <button class="explore-btn">MambaLLIE</button>
               <h1>Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space</h1>
-              <h3>Anonymous</h3>
+              <!-- <h3>Anonymous</h3> -->
               <!-- <h3>PCALab@NJUST</h3> -->
             </div>
             <div class="backdrop"></div>
@@ -107,66 +107,65 @@
         </div>
       </div>
     </div>
+    <div class="content-wrapper">
+      <section id="Demo" class="company-activities">
+        <h2 class="title1">Video Demo</h2>
+        <!-- 添加视频播放器 -->
+        <video controls>
+          <source src="./static/videos/videoi1.mp4" type="video/mp4">
+          <!-- 添加其他视频格式的源 -->
+          Your browser does not support the video tag.
+        </video>
 
-    <section id="Video Demo" class="company-activities">
-      <h2 class="title1">Video Demo</h2>
-      <!-- 添加视频播放器 -->
-      <video controls>
-        <source src="./static/videos/videoi1.mp4" type="video/mp4">
-        <!-- 添加其他视频格式的源 -->
-        Your browser does not support the video tag.
-      </video>
-
-      <body>
-        <p>
-          LoLv2 datasets. 
-        </p>
+        <body>
+          <p>
+            LoLv2 datasets. 
+          </p>
+          <div class="iframe-row">
+              <div class="iframe-container">
+                  <iframe src="https://imgsli.com/MjY2Nzc5"></iframe>
+              </div>
+              <div class="iframe-container">
+                  <iframe src="https://imgsli.com/MjY2Nzgw"></iframe>
+              </div>
+              <div class="iframe-container">
+                  <iframe src="https://imgsli.com/MjY2Nzgx"></iframe>
+              </div>
+          </div>
+          <p>
+            SMID and SDSD datasets. 
+          </p>
         <div class="iframe-row">
             <div class="iframe-container">
-                <iframe src="https://imgsli.com/MjY2Nzc5"></iframe>
+                <iframe src="https://imgsli.com/MjY2Nzg3"></iframe>
             </div>
             <div class="iframe-container">
-                <iframe src="https://imgsli.com/MjY2Nzgw"></iframe>
+                <iframe src="https://imgsli.com/MjY2Nzg1"></iframe>
             </div>
             <div class="iframe-container">
-                <iframe src="https://imgsli.com/MjY2Nzgx"></iframe>
+                <iframe src="https://imgsli.com/MjY2Nzg2"></iframe>
             </div>
         </div>
+
         <p>
-          SMID and SDSD datasets. 
+          ExDark dataset. 
         </p>
-      <div class="iframe-row">
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzg3"></iframe>
-          </div>
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzg1"></iframe>
-          </div>
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzg2"></iframe>
-          </div>
-      </div>
+        <div class="iframe-row">
 
-      <p>
-        ExDark dataset. 
-      </p>
-      <div class="iframe-row">
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzky"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzkw"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://imgsli.com/MjY2Nzk1"></iframe>
+            </div>
+        </div>
+      </body>
 
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzky"></iframe>
-          </div>
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzkw"></iframe>
-          </div>
-          <div class="iframe-container">
-              <iframe src="https://imgsli.com/MjY2Nzk1"></iframe>
-          </div>
-      </div>
-    </body>
+      </section>
 
-    </section>
-
-    <div class="content-wrapper">
       <section id="Abstract" class="Abstract">
         <h2 class="title1">Abstract</h2>
         <div class="intro">
@@ -178,8 +177,8 @@
           
       </section>
     
-      <section id="Our Method" class="showcases section-bg">
-        <h2 class="title1">Our Method</h2>
+      <section id="Methodology" class="showcases section-bg">
+        <h2 class="title1">Methodology</h2>
         <div class="showcase">
           <div class="showcase-img">
             <img src="./static/images/pipeline.png" alt="showcase" />
@@ -198,23 +197,13 @@
             Quantitative comparisons on LOL-V2-real, LOL-V2-syn, SMID, SDSD-indoor and SDSDoutdoor
 datasets. The best result is in red color while the second best result is in blue color. </p>
             <img src="./static/images/comp1.jpg" alt="showcase" />
-        </div>
 
+        <div class="intro">
         <p>
           Qualitative comparison with previous methods on LOL-V2-real and LOL-V2-syn datasets.
   Our MambaLLIE effectively enhances the illumination and preserves the color. 
         </p>
         <img src="./static/images/comp2.png" alt="showcase" />
-      </section>
-
-      <section id="Result" class="team-intro section-bg">
-        <h2 class="title1">Result</h2>
-        <div class="intro">
-          <p>
-            Low light object detection results on the ExDark dataset. The best result is in red whereas
-the second best one is in blue </p>
-            <img src="./static/images/res1.png" alt="showcase" />
-        </div>
 
         <div class="intro">
           <p>
@@ -224,6 +213,15 @@ the second best one is in blue </p>
           </p>
             <img src="./static/images/res2.png" alt="showcase" />
         </div>
+      </section>
+
+      <section id="Result" class="team-intro section-bg">
+        <h2 class="title1">Result</h2>
+        <div class="intro">
+          <p>
+            Low light object detection results on the ExDark dataset. </p>
+            <img src="./static/images/obj.png" alt="showcase" />
+        </div>
 
         <div class="intro">
           <p>
@@ -232,6 +230,32 @@ the second best one is in blue </p>
             <img src="./static/images/Object.png" alt="showcase" />
         </div>
       </section>
+
+      <div class="intro">
+        <p>
+          User study on the challenging low light image enhancement.
+        </p>
+          <img src="./static/images/user_study.png" alt="showcase" />
+      </div>
+
+      
+      <div class="intro">
+        <p>
+          Ablation Study. (a) Effects of design choices. (b) Effects of different selective kernel.
+        </p>
+          <img src="./static/images/abl.png" alt="showcase" />
+      </div>
+
+      <div class="intro">
+        <p>
+          The details of selective kernel behaviour, the LAM visualization demonstrates influence
+          of similar local information is higher than that of global dependence, our local-enhanced strategy
+          underscores the feature. Besides, the larger receptive fields can provide globally consistent results.
+        </p>
+          <img src="./static/images/select.png" alt="showcase" />
+      </div>
+
+    </section>
 
       <section id="Cite Our Work" class="company-activities">
         <h2 class="title1">Cite Our Work</h2>
@@ -244,7 +268,7 @@ the second best one is in blue </p>
           <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
           <li><a href="http://www.baidu"><i class="fab fa-google"></i></a></li>
         </ul>
-        <p class="icp-info">Anonymous</p>
+        <!-- <p class="icp-info">Anonymous</p> -->
         <p class="rights">&copy; All right reserved</p>
         <div class="scroll-to-top">
           <a href="#"><i class="fas fa-chevron-up"></i></a>
