@@ -129,6 +129,16 @@ exploreBtnEls.forEach((exploreBtnEl) => {
   });
 });
 
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const urlBtn = document.querySelector('.url-btn');
+  urlBtn.addEventListener('click', function() {
+    window.location.href = 'https://www.baidu.com';
+  });
+});
+
+
 // 折叠按钮事件
 const burgerEl = document.querySelector(".burger");
 burgerEl.addEventListener("click", () => {

@@ -158,6 +158,18 @@ header.sticky nav i {
   outline: none;
 }
 
+
+.url-btn {
+  padding: 14px 32px;
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 4px;
+  color: var(--text-color-lightest);
+  font-size: 23px;
+  cursor: pointer;
+  outline: none;
+}
+
 /* 内容区域 */
 /* 通用样式 */
 .content-wrapper {
@@ -835,6 +847,11 @@ footer {
   }
 
   .explore-btn{
+    font-size: 8px;
+    padding: 8px 18px;
+  }
+
+  .url-btn{
     font-size: 14px;
     padding: 8px 18px;
   }
